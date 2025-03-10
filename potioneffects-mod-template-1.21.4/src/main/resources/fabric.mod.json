@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "potioneffects-mod",
+	"version": "${version}",
+	"name": "PotionEffects MOD",
+	"description": "点一下获得药水效果!",
+	"authors": [
+		"wanquan5201!"
+	],
+	"contact": {
+		"homepage": "https://github.com/wanquan5201",
+		"sources": "https://github.com/wanquan5201/potioneffects-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/potioneffects-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.wanquan5201.potioneffects.PotionEffectsMOD"
+		],
+		"fabric-datagen": [
+			"com.wanquan5201.potioneffects.PotionEffectsMODDataGenerator"
+		]
+	},
+	"mixins": [
+		"potioneffects-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
